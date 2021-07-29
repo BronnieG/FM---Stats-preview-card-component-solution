@@ -1,0 +1,125 @@
+/* This is a CSS comment. Put your CSS styling below this line */
+
+/* MAIN DESIGN VARIABLE AND STYLE GUIDE */
+
+:root 
+{
+  --main-backgroundColor: hsl(233, 47%, 7%);
+  --card-backgroundColor: hsl(244, 38%, 16%);
+  --transparent-imgColor: hsl(277, 64%, 61%);
+  --main-heading: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+  --section-padding: 80px;
+}
+
+html 
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* ELEMENTS VARIABLES */
+
+.headerrow
+{
+  background-color: hsl(233, 47%, 7%);
+  padding: 160px;
+}
+
+.flex-container
+{
+  display: flex;
+}
+
+.text
+{
+  flex: 1;
+  background-color: var(--card-backgroundColor);
+  color: var(--main-heading);
+  font-family: Inter, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 70px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.text p
+{
+  color: var(--main-paragraph);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.highlight
+{
+  color: var(--transparent-imgColor);
+}
+
+.stat
+{
+  display: flex;
+  padding-top: 35px;
+}
+
+.statcol
+{
+  width: 100%
+}
+
+.stat h2
+{
+  color: var(--main-heading);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.stat p
+{
+  color: var(--stat-heading));
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase; 
+}
+
+.imagedesktop
+{
+  flex: 1;
+  width: 100%;
+  min-height: 100%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: url('image-header-desktop.jpg');
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.imagemobile
+{
+  background: url('image-header-mobile.jpg');
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  display: none;
+}
+
+.imagetablet
+{
+  background: url('image-header-mobile.jpg');
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  min-height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+
+}
